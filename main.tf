@@ -5,7 +5,7 @@ resource "aws_s3_bucket" "s3_tfstate" {
 resource "aws_s3_bucket_versioning" "versioning_example" {
   bucket = aws_s3_bucket.s3_tfstate.id
   versioning_configuration {
-    status = "Enabled"
+    status = "Suspended"
   }
 }
 
